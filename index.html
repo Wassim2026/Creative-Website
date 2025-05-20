@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpertone Creative - IT, Digital Marketing, Printing & Safety Solutions</title>
+    <meta name="description" content="Premium IT Services, Digital Marketing, Printing, and Safety Gear by Xpertone Creative.">
+    <meta name="keywords" content="IT services, digital marketing, printing services, safety gear, custom apparel, Xpertone Creative">
+    <meta name="author" content="Xpertone Creative">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/" aria-label="Xpertone Creative Home">
+                <img src="logo.png" alt="Xpertone Creative Logo" class="logo-image">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button">
+            <a href="tel:+971526353298" class="btn-contact">+971 52 635 3298</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider and Particles -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+        </div>
+        <canvas id="particles"></canvas>
+        <div class="hero-content">
+            <h1>Xpertone Creative: Innovate, Market, Print – Your All-in-One Solution</h1>
+            <p>Premium IT Services, Digital Marketing, Printing, and Safety Gear for businesses and individuals.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">    
+        <div class="container">
+            <h2>Why Choose Xpertone Creative</h2>
+            <p>Discover the key features that make us a leader in technology, marketing, printing, and safety solutions.</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-paint-brush icon"></i>
+                    <h3>Full Customization</h3>
+                    <p>Add logos, text, or designs to any product.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt icon"></i>
+                    <h3>Safety Compliance</h3>
+                    <p>Meets ANSI/ISEA 107 standards for visibility.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tshirt icon"></i>
+                    <h3>Durable Materials</h3>
+                    <p>Premium cotton, Dri-Fit, and rip-stop fabrics.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-heart icon"></i>
+                    <h3>Comfort Fit</h3>
+                    <p>Designed for all-day comfort and functionality.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-leaf icon"></i>
+                    <h3>Eco-Friendly Options</h3>
+                    <p>Sustainable printing and materials available.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users icon"></i>
+                    <h3>Versatile Styles</h3>
+                    <p>For Labourers, Supervisors, and Engineers.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset icon"></i>
+                    <h3>Quick Support</h3>
+                    <p>Responsive customer service for your orders.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-boxes icon"></i>
+                    <h3>Scalable Orders</h3>
+                    <p>From single items to bulk orders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Printing Services Section (Slider) -->
+<section id="printing-services" class="products-section printing-services">
+    <div class="container">
+        <h2>Our Products</h2>
+        <p>Discover XpertOne Creative’s range of custom apparel, safety gear, and printing products, designed for your business needs in Dubai.</p>
+    </div>
+    <div class="products-slider-wrapper">
+        <div class="products-slider" id="products-slider">
+            <!-- Product 1 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="polo-tshirt-cotton-220gsm-single.jpg" alt="Polo T-Shirt Cotton 220gsm Single Color">
+                    </div>
+                    <div class="product-content">
+                        <h3>Polo T-Shirt (Cotton 220gsm Single Color)</h3>
+                        <p class="price">AED 32</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Polo%20T-Shirt%20(Cotton%20220gsm%20Single%20Color)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="polo-tshirt-cotton-220gsm-multi.jpg" alt="Polo T-Shirt Cotton 220gsm Dual/Multi Color">
+                    </div>
+                    <div class="product-content">
+                        <h3>Polo T-Shirt (Cotton 220gsm Dual/Multi Color)</h3>
+                        <p class="price">AED 35</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Polo%20T-Shirt%20(Cotton%20220gsm%20Dual/Multi%20Color)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="polo-tshirt-drifit-220gsm-single.jpg" alt="Polo T-Shirt Cotton Drifit 220gsm Single Color">
+                    </div>
+                    <div class="product-content">
+                        <h3>Polo T-Shirt (Cotton Drifit 220gsm Single Color)</h3>
+                        <p class="price">AED 40</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Polo%20T-Shirt%20(Cotton%20Drifit%20220gsm%20Single%20Color)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="polo-tshirt-drifit-220gsm-multi.jpg" alt="Polo T-Shirt Cotton Drifit 220gsm Dual/Multi Color">
+                    </div>
+                    <div class="product-content">
+                        <h3>Polo T-Shirt (Cotton Drifit 220gsm Dual/Multi Color)</h3>
+                        <p class="price">AED 45</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Polo%20T-Shirt%20(Cotton%20Drifit%20220gsm%20Dual/Multi%20Color)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="safety-vest-general.jpg" alt="Safety Vest General">
+                    </div>
+                    <div class="product-content">
+                        <h3>Safety Vest (General)</h3>
+                        <p class="price">AED 15</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Safety%20Vest%20(General)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="safety-vest-supervisor.jpg" alt="Safety Vest Supervisor">
+                    </div>
+                    <div class="product-content">
+                        <h3>Safety Vest (Supervisor)</h3>
+                        <p class="price">AED 20</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Safety%20Vest%20(Supervisor)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="safety-vest-engineer.jpg" alt="Safety Vest Engineer">
+                    </div>
+                    <div class="product-content">
+                        <h3>Safety Vest (Engineer)</h3>
+                        <p class="price">AED 25</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Safety%20Vest%20(Engineer)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="caps.jpg" alt="Caps">
+                    </div>
+                    <div class="product-content">
+                        <h3>Caps</h3>
+                        <p class="price">AED 15</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Caps" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="business-cards-matt-350gsm.jpg" alt="Business Cards Matt Lamination 350gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Business Cards (Matt Lamination 350gsm)</h3>
+                        <p class="price">AED 100 (1000 pcs)</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Business%20Cards%20(Matt%20Lamination%20350gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="business-cards-round-matt-400gsm.jpg" alt="Business Cards Round Corners Matt Lamination 400gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Business Cards (Round Corners Matt Lamination 400gsm)</h3>
+                        <p class="price">AED 150 (1000 pcs)</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Business%20Cards%20(Round%20Corners%20Matt%20Lamination%20400gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="business-cards-round-spotuv-400gsm.jpg" alt="Business Cards Rounded Corner Spot UV Matt Lamination 400gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Business Cards (Rounded Corner Spot UV Matt Lamination 400gsm)</h3>
+                        <p class="price">AED 200 (1000 pcs)</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Business%20Cards%20(Rounded%20Corner%20Spot%20UV%20Matt%20Lamination%20400gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="business-cards-velvet-760mic.jpg" alt="Business Cards Rounded Corner Spot UV Velvet Lamination 760mic">
+                    </div>
+                    <div class="product-content">
+                        <h3>Business Cards (Rounded Corner Spot UV Velvet Lamination 760mic)</h3>
+                        <p class="price">AED 300 (1000 pcs)</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Business%20Cards%20(Rounded%20Corner%20Spot%20UV%20Velvet%20Lamination%20760mic)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 13 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="business-cards-pett-glossy-760mic.jpg" alt="Business Cards Rounded Corner PETT Glossy Lamination 760mic">
+                    </div>
+                    <div class="product-content">
+                        <h3>Business Cards (Rounded Corner PETT Glossy Lamination 760mic)</h3>
+                        <p class="price">AED 300 (1000 pcs)</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Business%20Cards%20(Rounded%20Corner%20PETT%20Glossy%20Lamination%20760mic)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 14 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="business-cards-gold-foil-velvet.jpg" alt="Business Cards Rounded Corner Gold Foil Spot UV Velvet Lamination">
+                    </div>
+                    <div class="product-content">
+                        <h3>Business Cards (Rounded Corner Gold Foil Spot UV Velvet Lamination)</h3>
+                        <p class="price">AED 400 (1000 pcs)</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Business%20Cards%20(Rounded%20Corner%20Gold%20Foil%20Spot%20UV%20Velvet%20Lamination)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 15 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="business-cards-pett-gold-760mic.jpg" alt="Business Cards Rounded Corner PETT Gold Glossy Lamination 760mic">
+                    </div>
+                    <div class="product-content">
+                        <h3>Business Cards (Rounded Corner PETT Gold Glossy Lamination 760mic)</h3>
+                        <p class="price">AED 400 (1000 pcs)</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Business%20Cards%20(Rounded%20Corner%20PETT%20Gold%20Glossy%20Lamination%20760mic)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 16 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="flyer-a6-glossy-170gsm.jpg" alt="Flyer A6 Glossy Paper 170gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Flyer A6 (14.85×10.5 cm, Glossy Paper 170gsm)</h3>
+                        <p class="price">500 pcs: AED 100<br>1000 pcs: AED 120<br>2000 pcs: AED 150</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Flyer%20A6%20(14.85×10.5%20cm,%20Glossy%20Paper%20170gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 17 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="flyer-a5-glossy-170gsm.jpg" alt="Flyer A5 Glossy Paper 170gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Flyer A5 (14.85×21.0 cm, Glossy Paper 170gsm)</h3>
+                        <p class="price">500 pcs: AED 125<br>1000 pcs: AED 175<br>2000 pcs: AED 250</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Flyer%20A5%20(14.85×21.0%20cm,%20Glossy%20Paper%20170gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 18 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="flyer-a4-glossy-170gsm.jpg" alt="Flyer A4 Glossy Paper 170gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Flyer A4 (29.7×21.0 cm, Glossy Paper 170gsm)</h3>
+                        <p class="price">500 pcs: AED 200<br>1000 pcs: AED 300<br>2000 pcs: AED 400</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Flyer%20A4%20(29.7×21.0%20cm,%20Glossy%20Paper%20170gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 19 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="flyer-a3-glossy-170gsm.jpg" alt="Flyer A3 Glossy Paper 170gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Flyer A3 (29.7×42.0 cm, Glossy Paper 170gsm)</h3>
+                        <p class="price">500 pcs: AED 300<br>1000 pcs: AED 400<br>2000 pcs: AED 700</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Flyer%20A3%20(29.7×42.0%20cm,%20Glossy%20Paper%20170gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 20 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="flyer-dl-glossy-170gsm.jpg" alt="Flyer DL Glossy Paper 170gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Flyer DL (Glossy Paper 170gsm)</h3>
+                        <p class="price">1000 pcs: AED 125<br>2000 pcs: AED 200<br>5000 pcs: AED 350</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Flyer%20DL%20(Glossy%20Paper%20170gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 21 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="envelope-dl-woodfree-120gsm.jpg" alt="Envelope DL Wood Free Paper 120gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Envelope DL (269×263 mm, Wood Free Paper 120gsm)</h3>
+                        <p class="price">1000 pcs: AED 450<br>2000 pcs: AED 750</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Envelope%20DL%20(269×263%20mm,%20Wood%20Free%20Paper%20120gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 22 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="envelope-a5-woodfree-120gsm.jpg" alt="Envelope A5 Wood Free Paper 120gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Envelope A5 (318×379 mm, Wood Free Paper 120gsm)</h3>
+                        <p class="price">1000 pcs: AED 550<br>2000 pcs: AED 850</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Envelope%20A5%20(318×379%20mm,%20Wood%20Free%20Paper%20120gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 23 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="envelope-a4-woodfree-120gsm.jpg" alt="Envelope A4 Wood Free Paper 120gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Envelope A4 (485×388 mm, Wood Free Paper 120gsm)</h3>
+                        <p class="price">1000 pcs: AED 1250<br>2000 pcs: AED 1800</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Envelope%20A4%20(485×388%20mm,%20Wood%20Free%20Paper%20120gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 24 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="door-hanger-glossy-170gsm.jpg" alt="Door Hanger Glossy 170gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Door Hanger (Glossy 170gsm)</h3>
+                        <p class="price">1000 pcs: AED 200<br>2000 pcs: AED 300<br>5000 pcs: AED 700</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Door%20Hanger%20(Glossy%20170gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 25 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="door-hanger-matt-350gsm.jpg" alt="Door Hanger Matt Lamination 350gsm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Door Hanger (Matt Lamination 350gsm)</h3>
+                        <p class="price">AED 400 (1000 pcs)</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Door%20Hanger%20(Matt%20Lamination%20350gsm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 26 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="sticker-8x12cm.jpg" alt="Sticker Without Lamination 8x12 cm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Sticker Without Lamination (8x12 cm)</h3>
+                        <p class="price">1000 pcs: AED 150<br>5000 pcs: AED 350<br>10000 pcs: AED 750</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Sticker%20Without%20Lamination%20(8x12%20cm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 27 -->
+            <div class="product-slide">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="sticker-23x17cm.jpg" alt="Sticker Without Lamination 23x17 cm">
+                    </div>
+                    <div class="product-content">
+                        <h3>Sticker Without Lamination (23x17 cm)</h3>
+                        <p class="price">1000 pcs: AED 300<br>5000 pcs: AED 750<br>10000 pcs: AED 1500</p>
+                        <a href="https://wa.me/+971526353298?text=I'd%20like%20to%20order%20Sticker%20Without%20Lamination%20(23x17%20cm)" class="order-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Digital Services Section -->
+    <section id="digital-services" class="products-section digital-services">
+        <div class="container">
+            <h2>Our Digital Services</h2>
+            <p>Empower your business with our cutting-edge digital solutions.</p>
+            <div class="products-grid">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="website-design.jpg" alt="Website Design & Development">
+                    </div>
+                    <div class="product-content">
+                        <h3>Website Design & Development</h3>
+                        <p class="description">Craft visually stunning, user-friendly websites that captivate and convert.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="crm.jpg" alt="Customer Relationship Management">
+                    </div>
+                    <div class="product-content">
+                        <h3>Customer Relationship Management (CRM)</h3>
+                        <p class="description">Streamline processes and build lasting customer relationships with CRM solutions.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="video-production.jpg" alt="Video Production">
+                    </div>
+                    <div class="product-content">
+                        <h3>Video Production</h3>
+                        <p class="description">Create engaging, high-quality videos to tell your brand’s story.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>A Decade of Excellence in IT, Digital Marketing, Printing, and Safety Solutions</h2>
+            <p>Xpertone Creative has been delivering premium IT services, digital marketing, printing, and safety gear for over a decade. Our mission is to empower businesses and individuals with innovative, high-quality solutions.</p>
+            <a href="about.html" class="cta-button">Know More</a>
+        </div>
+    </section>
+
+    <!-- Client Logo Slider Section -->
+    <section id="client-slider" class="client-slider-section">
+        <h2>Our Trusted Partners</h2>
+        <div class="client-slider">
+            <div class="client-slide"><img src="client-logo1.png" alt="Client Logo 1"></div>
+            <div class="client-slide"><img src="client-logo2.png" alt="Client Logo 2"></div>
+            <div class="client-slide"><img src="client-logo3.png" alt="Client Logo 3"></div>
+            <div class="client-slide"><img src="client-logo4.png" alt="Client Logo 4"></div>
+            <div class="client-slide"><img src="client-logo5.png" alt="Client Logo 5"></div>
+            <div class="client-slide"><img src="client-logo6.png" alt="Client Logo 6"></div>
+            <div class="client-slide"><img src="client-logo7.png" alt="Client Logo 7"></div>
+            <div class="client-slide"><img src="client-logo8.png" alt="Client Logo 8"></div>
+            <div class="client-slide"><img src="client-logo9.png" alt="Client Logo 9"></div>
+            <div class="client-slide"><img src="client-logo10.png" alt="Client Logo 10"></div>
+            <div class="client-slide"><img src="client-logo11.png" alt="Client Logo 11"></div>
+            <div class="client-slide"><img src="client-logo12.png" alt="Client Logo 12"></div>
+            <div class="client-slide"><img src="client-logo13.png" alt="Client Logo 13"></div>
+            <div class="client-slide"><img src="client-logo14.png" alt="Client Logo 14"></div>
+            <div class="client-slide"><img src="client-logo15.png" alt="Client Logo 15"></div>
+            <!-- Duplicated for seamless scrolling -->
+            <div class="client-slide"><img src="client-logo1.png" alt="Client Logo 1"></div>
+            <div class="client-slide"><img src="client-logo2.png" alt="Client Logo 2"></div>
+            <div class="client-slide"><img src="client-logo3.png" alt="Client Logo 3"></div>
+            <div class="client-slide"><img src="client-logo4.png" alt="Client Logo 4"></div>
+            <div class="client-slide"><img src="client-logo5.png" alt="Client Logo 5"></div>
+            <div class="client-slide"><img src="client-logo6.png" alt="Client Logo 6"></div>
+            <div class="client-slide"><img src="client-logo7.png" alt="Client Logo 7"></div>
+            <div class="client-slide"><img src="client-logo8.png" alt="Client Logo 8"></div>
+            <div class="client-slide"><img src="client-logo9.png" alt="Client Logo 9"></div>
+            <div class="client-slide"><img src="client-logo10.png" alt="Client Logo 10"></div>
+            <div class="client-slide"><img src="client-logo11.png" alt="Client Logo 11"></div>
+            <div class="client-slide"><img src="client-logo12.png" alt="Client Logo 12"></div>
+            <div class="client-slide"><img src="client-logo13.png" alt="Client Logo 13"></div>
+            <div class="client-slide"><img src="client-logo14.png" alt="Client Logo 14"></div>
+            <div class="client-slide"><img src="client-logo15.png" alt="Client Logo 15"></div>
+        </div>
+    </section>
+
+    <!-- Contact Buttons Section -->
+    <section id="contact-buttons" class="contact-buttons-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Reach out to Xpertone Creative through your preferred method.</p>
+            <div class="contact-buttons-grid">
+                <a href="https://wa.me/+971526353298" class="contact-button whatsapp" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> WhatsApp<br>+971 52 635 3298
+                </a>
+                <a href="tel:+971526353298" class="contact-button call">
+                    <i class="fas fa-phone"></i> Call<br>+971 52 635 3298
+                </a>
+                <a href="https://calendar.google.com/calendar/appointments" class="contact-button meet" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-calendar-alt"></i> Meet<br>Book A Meeting
+                </a>
+                <a href="mailto:info@xpertonecreative.com" class="contact-button email">
+                    <i class="fas fa-envelope"></i> Email<br>info@xpertonecreative.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="logo.png" alt="Xpertone Creative Logo" class="footer-logo">
+                <p>Your trusted partner for IT, digital marketing, printing, and safety solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#website-design">Website Design & Development</a></li>
+                    <li><a href="services.html#crm">Customer Relationship Management (CRM)</a></li>
+                    <li><a href="services.html#video-production">Video Production</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><a href="tel:+971526353298">+971 52 635 3298</a></p>
+                <p><a href="mailto:info@xpertonecreative.com">info@xpertonecreative.com</a></p>
+                <p>226, Iridium Building, Umm Suqeim Road, Dubai</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Xpertone Creative. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Particles -->
+    <script src="script.js"></script>
+</body>
+</html>
