@@ -15,28 +15,55 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="/" aria-label="XpertOne Creative Home">
-                <img src="Logo.png" alt="XpertOne Creative Logo" loading="lazy">
+            <a href="/" aria-label="Xpertone Creative Home">
+                <img src="Logo.png" alt="Xpertone Creative Logo" class="logo-image">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
 
-    <!-- Services Hero Section -->
-    <section id="services-hero" class="services-hero-section">
-        <div class="container">
-            <h1>Our Services</h1>
-            <p>Unleash your brand’s potential with XpertOne Creative’s cutting-edge digital and creative solutions.</p>
-            
+
+     <!-- Hero Section with Slider and Particles -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <img src="Services Header.jpg" alt="Hero Slide 1 - Safety Gear Solutions">
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <img src="App Development.jpg" alt="Hero Slide 2 - Printing and Stationery">
+            </div>
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <img src="Video Production.jpg" alt="Hero Slide 3 - Web Design and IT Services">
+            </div>
+        </div>
+        <!-- Navigation Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+        <!-- Particles Canvas -->
+        <canvas id="particles"></canvas>
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1>Xpertone Creative: Innovate, Market, Print – Your All-in-One Solution</h1>
+            <p>Premium IT Services, Digital Marketing, Printing, and Safety Gear for businesses and individuals.</p>
         </div>
     </section>
 
@@ -185,6 +212,13 @@
             <p>© 2025 XpertOne Creative. All rights reserved.</p>
         </div>
     </footer>
+     <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/+971526353298" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
     <!-- JavaScript -->
     <script src="script.js" defer></script>
@@ -214,6 +248,7 @@
             "https://wa.me/+971526353298"
         ]
     }
-    </script>
+    
+
 </body>
 </html>

@@ -13,41 +13,41 @@
         .product-content {
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Pushes button to bottom */
-            min-height: 150px; /* Ensures consistent height for content area */
-            text-align: center; /* Centers text and button horizontally */
-            padding: 10px; /* Consistent padding */
+            justify-content: space-between;
+            min-height: 150px;
+            text-align: center;
+            padding: 10px;
         }
         .order-button {
-            background-color: #25D366; /* WhatsApp green */
-            color: #FFFFFF; /* White text/icon */
-            padding: 10px 20px; /* Consistent padding */
+            background-color: #25D366;
+            color: #FFFFFF;
+            padding: 10px 20px;
             border: none;
-            border-radius: 5px; /* Rounded corners */
+            border-radius: 5px;
             text-decoration: none;
             display: inline-flex;
-            align-items: center; /* Centers icon and text vertically */
-            justify-content: center; /* Centers content horizontally */
+            align-items: center;
+            justify-content: center;
             font-size: 16px;
-            width: 160px; /* Fixed width for all buttons */
-            margin: 10px auto 0; /* Centers button horizontally, adds top margin */
-            transition: background-color 0.3s ease; /* Smooth hover effect */
+            width: 160px;
+            margin: 10px auto 0;
+            transition: background-color 0.3s ease;
         }
         .order-button:hover {
-            background-color: #20B058; /* Darker green on hover */
+            background-color: #20B058;
         }
         .order-button i {
-            margin-right: 8px; /* Space between icon and text */
+            margin-right: 8px;
         }
         .product-item {
             display: flex;
-            flex-direction: column; /* Ensures content stacks vertically */
-            align-items: center; /* Centers content horizontally */
+            flex-direction: column;
+            align-items: center;
         }
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-            gap: 20px; /* Consistent spacing between items */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
     </style>
 </head>
@@ -55,8 +55,8 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="/" aria-label="XpertOne Creative Home">
-                <img src="logo.png" alt="XpertOne Creative Logo" class="logo-image">
+            <a href="/" aria-label="Xpertone Creative Home">
+                <img src="Logo.png" alt="Xpertone Creative Logo" class="logo-image">
             </a>
         </div>
         <nav>
@@ -69,9 +69,10 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="contact-button">
-            <a href="tel:+971526353298" class="btn-contact">+971 52 635 3298</a>
-        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        
     </header>
 
     <!-- Products Hero Section -->
@@ -94,7 +95,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Polo T-Shirt (Cotton 220gsm Single Color)</h3>
-                        <p class="rate">AED 32</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 32</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Polo%20T-Shirt%20(Cotton%20220gsm%20Single%20Color)" class="order-button" aria-label="Order Now Polo T-Shirt Cotton 220gsm Single Color">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -106,7 +109,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Polo T-Shirt (Cotton 220gsm Dual/Multi Color)</h3>
-                        <p class="rate">AED 35</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 35</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Polo%20T-Shirt%20(Cotton%20220gsm%20Dual/Multi%20Color)" class="order-button" aria-label="Order Now Polo T-Shirt Cotton 220gsm Dual/Multi Color">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -118,7 +123,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Polo T-Shirt (Cotton Drifit 220gsm Single Color)</h3>
-                        <p class="rate">AED 40</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 40</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Polo%20T-Shirt%20(Cotton%20Drifit%20220gsm%20Single%20Color)" class="order-button" aria-label="Order Now Polo T-Shirt Cotton Drifit 220gsm Single Color">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -130,7 +137,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Polo T-Shirt (Cotton Drifit 220gsm Dual/Multi Color)</h3>
-                        <p class="rate">AED 45</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 45</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Polo%20T-Shirt%20(Cotton%20Drifit%20220gsm%20Dual/Multi%20Color)" class="order-button" aria-label="Order Now Polo T-Shirt Cotton Drifit 220gsm Dual/Multi Color">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -144,7 +153,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Safety Vest (General)</h3>
-                        <p class="rate">AED 15</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 15</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Safety%20Vest%20(General)" class="order-button" aria-label="Order Now Safety Vest General">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -156,7 +167,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Safety Vest (Supervisor)</h3>
-                        <p class="rate">AED 20</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 20</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Safety%20Vest%20(Supervisor)" class="order-button" aria-label="Order Now Safety Vest Supervisor">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -168,7 +181,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Safety Vest (Engineer)</h3>
-                        <p class="rate">AED 25</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 25</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Safety%20Vest%20(Engineer)" class="order-button" aria-label="Order Now Safety Vest Engineer">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -182,7 +197,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Caps</h3>
-                        <p class="rate">AED 15</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 15</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Caps" class="order-button" aria-label="Order Now Caps">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -196,7 +213,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Business Cards (Matt Lamination 350gsm)</h3>
-                        <p class="rate">AED 100 (1000 pcs)</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 100 (1000 pcs)</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Business%20Cards%20(Matt%20Lamination%20350gsm)" class="order-button" aria-label="Order Now Business Cards Matt Lamination 350gsm">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -208,7 +227,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Business Cards (Round Corners Matt Lamination 400gsm)</h3>
-                        <p class="rate">AED 150 (1000 pcs)</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 150 (1000 pcs)</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Business%20Cards%20(Round%20Corners%20Matt%20Lamination%20400gsm)" class="order-button" aria-label="Order Now Business Cards Round Corners Matt Lamination 400gsm">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -220,7 +241,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Business Cards (Rounded Corner Spot UV Matt Lamination 400gsm)</h3>
-                        <p class="rate">AED 200 (1000 pcs)</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 200 (1000 pcs)</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Business%20Cards%20(Rounded%20Corner%20Spot%20UV%20Matt%20Lamination%20400gsm)" class="order-button" aria-label="Order Now Business Cards Rounded Corner Spot UV Matt Lamination 400gsm">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -232,7 +255,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Business Cards (Rounded Corner Spot UV Velvet Lamination 760mic)</h3>
-                        <p class="rate">AED 300 (1000 pcs)</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 300 (1000 pcs)</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Business%20Cards%20(Rounded%20Corner%20Spot%20UV%20Velvet%20Lamination%20760mic)" class="order-button" aria-label="Order Now Business Cards Rounded Corner Spot UV Velvet Lamination 760mic">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -244,7 +269,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Business Cards (Rounded Corner PETT Glossy Lamination 760mic)</h3>
-                        <p class="rate">AED 300 (1000 pcs)</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 300 (1000 pcs)</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Business%20Cards%20(Rounded%20Corner%20PETT%20Glossy%20Lamination%20760mic)" class="order-button" aria-label="Order Now Business Cards Rounded Corner PETT Glossy Lamination 760mic">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -256,7 +283,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Business Cards (Rounded Corner Gold Foil Spot UV Velvet Lamination)</h3>
-                        <p class="rate">AED 400 (1000 pcs)</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 400 (1000 pcs)</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Business%20Cards%20(Rounded%20Corner%20Gold%20Foil%20Spot%20UV%20Velvet%20Lamination)" class="order-button" aria-label="Order Now Business Cards Rounded Corner Gold Foil Spot UV Velvet Lamination">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -268,7 +297,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Business Cards (Rounded Corner PETT Gold Glossy Lamination 760mic)</h3>
-                        <p class="rate">AED 400 (1000 pcs)</p>
+                        <div class="price-tags">
+                            <span class="price-tag">AED 400 (1000 pcs)</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Business%20Cards%20(Rounded%20Corner%20PETT%20Gold%20Glossy%20Lamination%20760mic)" class="order-button" aria-label="Order Now Business Cards Rounded Corner PETT Gold Glossy Lamination 760mic">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -427,7 +458,9 @@
                     </div>
                     <div class="product-content">
                         <h3>Door Hanger (Matt Lamination 350gsm)</h3>
-                        <p class="rate">AED 400 (1000 pcs)</p>
+                        <div class="price-tags">
+                            <span class="price-tag">1000 pcs: AED 400</span>
+                        </div>
                         <a href="https://wa.me/+971526353298?text=I%20want%20to%20order%20Door%20Hanger%20(Matt%20Lamination%20350gsm)" class="order-button" aria-label="Order Now Door Hanger Matt Lamination 350gsm">
                             <i class="fab fa-whatsapp"></i> Order Now
                         </a>
@@ -490,7 +523,7 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" class=" (-> active">Products</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -506,5 +539,11 @@
             <p>© 2025 XpertOne Creative. All rights reserved.</p>
         </div>
     </footer>
+     <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/+971526353298" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

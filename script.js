@@ -297,4 +297,77 @@ document.addEventListener('DOMContentLoaded', () => {
             // Add analytics tracking here (e.g., Google Analytics)
         });
     }
+});document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+    document.querySelector('nav').classList.toggle('active');
+});document.addEventListener('DOMContentLoaded', () => {
+    // Get all nav links
+    const navLinks = document.querySelectorAll('nav ul li a');
+    // Get the current page URL
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    // Remove .active from all links
+    navLinks.forEach(link => link.classList.remove('active'));
+
+    // Add .active to the link matching the current page
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
+
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+    });
+});document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    navLinks.forEach(link => link.classList.remove('active'));
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
+
+    document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+    });
+});document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    navLinks.forEach(link => link.classList.remove('active'));
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
+
+    document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+    });
+});document.querySelectorAll('.price-tag').forEach(tag => {
+    tag.addEventListener('click', () => {
+        alert(`Selected: ${tag.textContent}`);
+        // Add your logic here
+    });
+});document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    navLinks.forEach(link => link.classList.remove('active'));
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
+
+    document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+    });
 });
