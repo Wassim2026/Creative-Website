@@ -8,462 +8,15 @@
     <meta name="keywords" content="XpertOne Creative services, website design, app development, CRM, social media management, video production, Dubai creative agency">
     <meta name="author" content="XpertOne Creative">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* General Reset and Font */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: #fff; /* White text by default */
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        /* Header Styles */
-        header {
-            background: linear-gradient(90deg, #1C2F4A, #2E466E); /* Adjusted darker blue shade */
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-        .logo img {
-            height: 50px;
-            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li a {
-            color: #fff; /* White text */
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 16px;
-            position: relative;
-            transition: color 0.3s ease;
-        }
-        nav ul li a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: #25D366;
-            left: 0;
-            bottom: -5px;
-            transition: width 0.3s ease;
-        }
-        nav ul li a:hover::after, nav ul li a.active::after {
-            width: 100%;
-        }
-        nav ul li a:hover, nav ul li a.active {
-            color: #e0e0e0; /* Lighter white on hover */
-        }
-        .contact-button .btn-contact {
-            background: linear-gradient(45deg, #25D366, #20B058);
-            color: #fff;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-        }
-        .contact-button .btn-contact:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
-            background: #FFD700; /* Golden hover */
-        }
-
-        /* Services Hero Section */
-        .services-hero-section {
-            position: relative;
-            text-align: center;
-            padding: 5rem 2rem;
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('T1.png') no-repeat center center/cover;
-            background-size: cover;
-            min-height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-        .services-hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #25D366, #1a2a44);
-            opacity: 0.2;
-            z-index: 1;
-        }
-        .services-hero-section .container {
-            position: relative;
-            z-index: 2;
-        }
-        .services-hero-section h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #fff;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-            transition: color 0.3s ease;
-            animation: fadeInDown 1s ease forwards;
-        }
-        .services-hero-section h1:hover {
-            color: #e0e0e0;
-        }
-        .services-hero-section p {
-            font-size: 1.2rem;
-            font-weight: 400;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #fff;
-            line-height: 1.5;
-            transition: color 0.3s ease;
-            animation: fadeInUp 1s ease forwards;
-            animation-delay: 0.3s;
-        }
-        .services-hero-section p:hover {
-            color: #e0e0e0;
-        }
-
-        /* Services List Section */
-        .services-list-section {
-            padding: 4rem 2rem;
-            text-align: center;
-            background: linear-gradient(180deg, #0B1826, #1C2F4A); /* Adjusted deeper dark blue shade */
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-        .service-item {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            animation: fadeInUp 0.6s ease forwards;
-            opacity: 0;
-        }
-        @supports not (backdrop-filter: blur(10px)) {
-            .service-item {
-                background: rgba(255, 255, 255, 0.2);
-            }
-        }
-        .service-item:nth-child(1) { animation-delay: 0.1s; }
-        .service-item:nth-child(2) { animation-delay: 0.2s; }
-        .service-item:nth-child(3) { animation-delay: 0.3s; }
-        .service-item:nth-child(4) { animation-delay: 0.4s; }
-        .service-item:nth-child(5) { animation-delay: 0.5s; }
-        .service-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        .service-image {
-            position: relative;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .service-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
-        }
-        .service-icon {
-            position: absolute;
-            font-size: 50px;
-            color: #25D366;
-            transition: transform 0.3s ease;
-        }
-        .service-item:hover .service-icon {
-            transform: scale(1.1);
-        }
-        .service-content {
-            padding: 1.5rem;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        .service-content h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 0.5rem;
-            transition: color 0.3s ease;
-        }
-        .service-content h3:hover {
-            color: #25D366;
-        }
-        .text-box {
-            flex-grow: 1;
-            margin-bottom: 1rem;
-        }
-        .text-box p {
-            font-size: 1rem;
-            color: #fff;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-            transition: color 0.3s ease;
-        }
-        .text-box p:hover {
-            color: #25D366;
-        }
-        .key-features {
-            list-style: none;
-            margin-bottom: 1rem;
-        }
-        .key-features li {
-            font-size: 0.9rem;
-            color: #fff;
-            margin-bottom: 0.5rem;
-            transition: color 0.3s ease;
-        }
-        .key-features li:hover {
-            color: #25D366;
-        }
-        .key-features li:before {
-            content: '\f00c';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: #25D366;
-            margin-right: 10px;
-        }
-        .whatsapp-button, .crm-button {
-            display: inline-flex;
-            align-items: center;
-            background: #25D366;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
-            margin-top: auto;
-            width: 220px;
-            justify-content: center;
-        }
-        .whatsapp-button i, .crm-button i {
-            margin-right: 0.5rem;
-            font-size: 1.2rem;
-        }
-        .whatsapp-button:hover, .crm-button:hover {
-            background: #FFD700; /* Golden hover */
-            color: #333;
-            transform: translateY(-3px);
-        }
-
-        /* Footer Styles */
-        footer {
-            background: linear-gradient(180deg, #2E466E, #1C2F4A); /* Adjusted lighter dark blue shade */
-            color: #fff;
-            padding: 3rem 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
-        .footer-section {
-            text-align: left;
-        }
-        .footer-section img {
-            height: 50px;
-            margin-bottom: 15px;
-            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
-        }
-        .footer-section h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #fff;
-            transition: color 0.3s ease;
-        }
-        .footer-section h3:hover {
-            color: #25D366;
-        }
-        .footer-section p {
-            font-size: 0.9rem;
-            color: #fff;
-            line-height: 1.5;
-            transition: color 0.3s ease;
-        }
-        .footer-section p:hover {
-            color: #25D366;
-        }
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .footer-section ul li {
-            margin: 10px 0;
-        }
-        .footer-section ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-        }
-        .footer-section ul li a:hover {
-            color: #e0e0e0;
-        }
-        .footer-section p a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .footer-section p a:hover {
-            color: #25D366;
-        }
-        .footer-bottom {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 30px;
-        }
-        .footer-bottom p {
-            font-size: 0.85rem;
-            color: #fff;
-            transition: color 0.3s ease;
-        }
-        .footer-bottom p:hover {
-            color: #25D366;
-        }
-
-        /* Animations */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-            nav ul {
-                flex-direction: column;
-                text-align: center;
-                gap: 15px;
-            }
-            .services-hero-section {
-                min-height: 300px;
-                padding: 4rem 1.5rem;
-            }
-            .services-hero-section h1 {
-                font-size: 2rem;
-            }
-            .services-hero-section p {
-                font-size: 1rem;
-            }
-            .services-list-section {
-                padding: 3rem 1.5rem;
-            }
-            .service-content {
-                min-height: 280px;
-            }
-            .whatsapp-button, .crm-button {
-                width: 200px;
-            }
-            .footer-section {
-                text-align: center;
-            }
-            .footer-section img {
-                margin: 0 auto 1rem;
-            }
-        }
-        @media (max-width: 576px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            .services-hero-section {
-                min-height: 250px;
-                padding: 3rem 1rem;
-            }
-            .services-hero-section h1 {
-                font-size: 1.5rem;
-            }
-            .services-hero-section p {
-                font-size: 0.9rem;
-            }
-            .services-list-section {
-                padding: 2rem 1rem;
-            }
-            .service-content h3 {
-                font-size: 1.1rem;
-            }
-            .text-box p, .key-features li {
-                font-size: 0.9rem;
-            }
-            .whatsapp-button, .crm-button {
-                font-size: 0.8rem;
-                padding: 8px 16px;
-                width: 180px;
-            }
-        }
-    </style>
 </head>
-<body>
+<body class="services-page">
     <!-- Header -->
     <header>
         <div class="logo">
             <a href="/" aria-label="XpertOne Creative Home">
-                <img src="logo.png" alt="XpertOne Creative Logo" class="logo-image">
+                <img src="Logo.png" alt="XpertOne Creative Logo" loading="lazy">
             </a>
         </div>
         <nav>
@@ -476,9 +29,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="contact-button">
-            <a href="tel:+971526353298" class="btn-contact">+971 52 635 3298</a>
-        </div>
     </header>
 
     <!-- Services Hero Section -->
@@ -486,6 +36,7 @@
         <div class="container">
             <h1>Our Services</h1>
             <p>Unleash your brand’s potential with XpertOne Creative’s cutting-edge digital and creative solutions.</p>
+            
         </div>
     </section>
 
@@ -496,7 +47,7 @@
                 <!-- Website Design & Development -->
                 <div class="service-item">
                     <div class="service-image">
-                        <img src="website-design.jpg" alt="Website Design & Development">
+                        <img src="Web2.jpg" alt="Website Design & Development" loading="lazy">
                         <i class="fas fa-globe service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -509,16 +60,13 @@
                                 <li>Optimized Performance</li>
                             </ul>
                         </div>
-                        <a href="https://wa.me/+971526353298?text=I%20want%20to%20inquire%20about%20Website%20Design%20and%20Development" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp about Website Design & Development">
-                            <i class="fab fa-whatsapp"></i> Contact via WhatsApp
-                        </a>
                     </div>
                 </div>
 
                 <!-- App Development -->
                 <div class="service-item">
                     <div class="service-image">
-                        <img src="app-development.jpg" alt="App Development">
+                        <img src="App.png" alt="App Development" loading="lazy">
                         <i class="fas fa-mobile-alt service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -531,16 +79,13 @@
                                 <li>Ongoing Support</li>
                             </ul>
                         </div>
-                        <a href="https://wa.me/+971526353298?text=I%20want%20to%20inquire%20about%20App%20Development" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp about App Development">
-                            <i class="fab fa-whatsapp"></i> Contact via WhatsApp
-                        </a>
                     </div>
                 </div>
 
                 <!-- Customer Relationship Management (CRM) -->
                 <div class="service-item">
                     <div class="service-image">
-                        <img src="crm.jpg" alt="Customer Relationship Management">
+                        <img src="CRM.jpeg" alt="Customer Relationship Management" loading="lazy">
                         <i class="fas fa-users service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -562,7 +107,7 @@
                 <!-- Social Media Management -->
                 <div class="service-item">
                     <div class="service-image">
-                        <img src="social-media.jpg" alt="Social Media Management">
+                        <img src="SM.jpg" alt="Social Media Management" loading="lazy">
                         <i class="fas fa-share-alt service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -575,16 +120,13 @@
                                 <li>Paid Ad Management</li>
                             </ul>
                         </div>
-                        <a href="https://wa.me/+971526353298?text=I%20want%20to%20inquire%20about%20Social%20Media%20Management" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp about Social Media Management">
-                            <i class="fab fa-whatsapp"></i> Contact via WhatsApp
-                        </a>
                     </div>
                 </div>
 
                 <!-- Video Production -->
                 <div class="service-item">
                     <div class="service-image">
-                        <img src="video-production.jpg" alt="Video Production">
+                        <img src="Video.jpg" alt="Video Production" loading="lazy">
                         <i class="fas fa-video service-icon"></i>
                     </div>
                     <div class="service-content">
@@ -597,20 +139,22 @@
                                 <li>Post-Production Editing</li>
                             </ul>
                         </div>
-                        <a href="https://wa.me/+971526353298?text=I%20want%20to%20inquire%20about%20Video%20Production" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp about Video Production">
-                            <i class="fab fa-whatsapp"></i> Contact via WhatsApp
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/+971526353298?text=I%20have%20a%20general%20inquiry" class="floating-whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <img src="logo.png" alt="XpertOne Creative Logo" class="footer-logo">
+                <img src="Logo.png" alt="XpertOne Creative Logo" loading="lazy">
                 <p>Your trusted partner for creative and digital solutions.</p>
             </div>
             <div class="footer-section">
@@ -641,5 +185,35 @@
             <p>© 2025 XpertOne Creative. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "XpertOne Creative",
+        "url": "https://www.xpertonecreative.ae",
+        "logo": "https://www.xpertonecreative.ae/images/logo.webp",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971526353298",
+            "contactType": "Customer Service",
+            "email": "info@xpertonecreative.ae",
+            "areaServed": "AE"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "226, Iridium Building, Umm Suqeim Road",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+        },
+        "sameAs": [
+            "https://wa.me/+971526353298"
+        ]
+    }
+    </script>
 </body>
 </html>

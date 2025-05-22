@@ -275,4 +275,26 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenuToggle.innerHTML = `<i class="fas ${isActive ? 'fa-times' : 'fa-bars'}"></i>`;
         });
     }
+});// js/script.js
+document.addEventListener('DOMContentLoaded', () => {
+    // Mobile Menu Toggle
+    const nav = document.querySelector('nav');
+    const toggleButton = document.createElement('button');
+    toggleButton.innerHTML = '<i class="fas fa-bars"></i>';
+    toggleButton.classList.add('menu-toggle');
+    toggleButton.setAttribute('aria-label', 'Toggle navigation menu');
+    document.querySelector('header').prepend(toggleButton);
+
+    toggleButton.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+
+    // WhatsApp Button Click Tracking (Optional)
+    const whatsappButton = document.querySelector('.floating-whatsapp-button');
+    if (whatsappButton) {
+        whatsappButton.addEventListener('click', () => {
+            console.log('WhatsApp button clicked');
+            // Add analytics tracking here (e.g., Google Analytics)
+        });
+    }
 });
