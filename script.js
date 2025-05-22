@@ -34,110 +34,245 @@ const currentPage = window.location.pathname.split('/').pop().replace('.html', '
 const product = productPricing[currentPage] || { name: 'Unknown Product', prices: { '1': 0 } };
 
 function updatePrice() {
-    const quantity = document.getElementById('quantity').value;
+    const quantity = document.getElementById('quantity')?.value;
     const price = product.prices[quantity] || 0;
-    document.getElementById('price').textContent = `AED ${price}`;
+    const priceElement = document.getElementById('price');
+    if (priceElement) {
+        priceElement.textContent = `AED ${price}`;
+    }
     updateWhatsAppLink();
 }
 
 function updateWhatsAppLink() {
-    const quantity = document.getElementById('quantity').value;
-    const message = `Hello, I would like to order ${quantity} pcs of ${product.name}.`;
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappLink = `https://wa.me/971526353298?text=${encodedMessage}`;
-    document.getElementById('whatsapp-order').setAttribute('href', whatsappLink);
+    const quantity = document.getElementById('quantity')?.value;
+    if (quantity) {
+        const message = `Hello, I would like to order ${quantity} pcs of ${product.name}.`;
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappLink = `https://wa.me/971526353298?text=${encodedMessage}`;
+        const whatsappOrder = document.getElementById('whatsapp-order');
+        if (whatsappOrder) {
+            whatsappOrder.setAttribute('href', whatsappLink);
+        }
+    }
 }
 
-// Initialize price and WhatsApp link on page load
-document.addEventListener('DOMContentLoaded', () => {
-    updatePrice();
-});// Particles.js (Existing Code, Unchanged)
+// Particles.js
 const canvas = document.getElementById('particles');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+const ctx = canvas?.getContext('2d');
+if (canvas && ctx) {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-const particlesArray = [];
-const numberOfParticles = 100;
+    const particlesArray = [];
+    const numberOfParticles = 100;
 
-class Particle {
-    constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 5 + 1;
-        this.speedX = Math.random() * 3 - 1.5;
-        this.speedY = Math.random() * 3 - 1.5;
+    class Particle {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 5 + 1;
+            this.speedX = Math.random() * 3 - 1.5;
+            this.speedY = Math.random() * 3 - 1.5;
+        }
+
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+
+            if (this.size > 0.2) this.size -= 0.1;
+
+            if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+            if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        }
+
+        draw() {
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
     }
 
-    update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-
-        if (this.size > 0.2) this.size -= 0.1;
-
-        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
-    }
-
-    draw() {
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-    }
-}
-
-function initParticles() {
-    for (let i = 0; i < numberOfParticles; i++) {
-        particlesArray.push(new Particle());
-    }
-}
-
-function animateParticles() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].update();
-        particlesArray[i].draw();
-        if (particlesArray[i].size <= 0.2) {
-            particlesArray.splice(i, 1);
-            i--;
+    function initParticles() {
+        for (let i = 0; i < numberOfParticles; i++) {
             particlesArray.push(new Particle());
         }
     }
-    requestAnimationFrame(animateParticles);
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < particlesArray.length; i++) {
+            particlesArray[i].update();
+            particlesArray[i].draw();
+            if (particlesArray[i].size <= 0.2) {
+                particlesArray.splice(i, 1);
+                i--;
+                particlesArray.push(new Particle());
+            }
+        }
+        requestAnimationFrame(animateParticles);
+    }
+
+    initParticles();
+    animateParticles();
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
 }
 
-initParticles();
-animateParticles();
+// Features Slider Continuous Loop
+const featuresSlider = document.getElementById('features-slider');
+const featureItems = document.querySelectorAll('.feature-item');
+const totalFeatureItems = featureItems.length; // 8 items
+const playPauseBtn = document.getElementById('features-play-pause');
+let isFeaturesPaused = false;
 
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
+if (featuresSlider && featureItems.length > 0) {
+    // Clone all items to create a seamless loop
+    for (let i = 0; i < totalFeatureItems; i++) {
+        const clone = featureItems[i].cloneNode(true);
+        featuresSlider.appendChild(clone);
+    }
+
+    // Pause on hover
+    featuresSlider.addEventListener('mouseenter', () => {
+        if (!isFeaturesPaused) {
+            featuresSlider.classList.add('paused');
+        }
+    });
+
+    // Resume on mouse leave
+    featuresSlider.addEventListener('mouseleave', () => {
+        if (!isFeaturesPaused) {
+            featuresSlider.classList.remove('paused');
+        }
+    });
+
+    // Pause on touchstart, resume on touchend
+    featuresSlider.addEventListener('touchstart', () => {
+        if (!isFeaturesPaused) {
+            featuresSlider.classList.add('paused');
+        }
+    });
+
+    featuresSlider.addEventListener('touchend', () => {
+        if (!isFeaturesPaused) {
+            featuresSlider.classList.remove('paused');
+        }
+    });
+
+    // Play/Pause button functionality
+    if (playPauseBtn) {
+        playPauseBtn.addEventListener('click', () => {
+            isFeaturesPaused = !isFeaturesPaused;
+            if (isFeaturesPaused) {
+                featuresSlider.classList.add('paused');
+                playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+            } else {
+                featuresSlider.classList.remove('paused');
+                playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            }
+        });
+    }
+}
 
 // Product Slider Continuous Loop
-const slider = document.getElementById('products-slider');
-const slides = document.querySelectorAll('.product-slide');
-const slideWidth = slides[0].offsetWidth + 32; // Width of one slide (250px + 2rem margin)
-const totalSlides = slides.length; // 27 slides
+const productsSlider = document.getElementById('products-slider');
+const productSlides = document.querySelectorAll('.product-slide');
+const totalProductSlides = productSlides.length; // 27 slides
 
-// Clone the first few slides to create the illusion of an infinite loop
-for (let i = 0; i < 5; i++) {
-    const clone = slides[i].cloneNode(true);
-    slider.appendChild(clone);
-}
-
-let scrollPosition = 0;
-const speed = 1; // Adjust speed (pixels per frame)
-
-function scrollSlider() {
-    scrollPosition += speed;
-    if (scrollPosition >= slideWidth * totalSlides) {
-        scrollPosition = 0; // Reset to the beginning seamlessly
+if (productsSlider && productSlides.length > 0) {
+    // Clone all items to create a seamless loop
+    for (let i = 0; i < totalProductSlides; i++) {
+        const clone = productSlides[i].cloneNode(true);
+        productsSlider.appendChild(clone);
     }
-    slider.style.transform = `translateX(-${scrollPosition}px)`;
-    requestAnimationFrame(scrollSlider);
+
+    // Pause on hover
+    productsSlider.addEventListener('mouseenter', () => {
+        productsSlider.classList.add('paused');
+    });
+
+    // Resume on mouse leave
+    productsSlider.addEventListener('mouseleave', () => {
+        productsSlider.classList.remove('paused');
+    });
+
+    // Pause on touchstart, resume on touchend
+    productsSlider.addEventListener('touchstart', () => {
+        productsSlider.classList.add('paused');
+    });
+
+    productsSlider.addEventListener('touchend', () => {
+        productsSlider.classList.remove('paused');
+    });
 }
 
-// Start the slider animation
-scrollSlider();
+// Hero Slider Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+    const slideInterval = 5000;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        if (index >= slides.length) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = slides.length - 1;
+        } else {
+            currentSlide = index;
+        }
+
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    let slideshowInterval = setInterval(nextSlide, slideInterval);
+
+    document.querySelector('.hero-slider')?.addEventListener('mouseenter', () => {
+        clearInterval(slideshowInterval);
+    });
+
+    document.querySelector('.hero-slider')?.addEventListener('mouseleave', () => {
+        slideshowInterval = setInterval(nextSlide, slideInterval);
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            clearInterval(slideshowInterval);
+            const slideIndex = parseInt(dot.getAttribute('data-slide'));
+            showSlide(slideIndex);
+            slideshowInterval = setInterval(nextSlide, slideInterval);
+        });
+    });
+
+    if (slides.length > 0) {
+        showSlide(currentSlide);
+    }
+
+    updatePrice();
+});
+
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('nav');
+
+    if (mobileMenuToggle && nav) {
+        mobileMenuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            const isActive = nav.classList.contains('active');
+            mobileMenuToggle.innerHTML = `<i class="fas ${isActive ? 'fa-times' : 'fa-bars'}"></i>`;
+        });
+    }
+});
