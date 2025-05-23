@@ -16,41 +16,56 @@
     <header>
         <div class="logo">
             <a href="/" aria-label="Xpertone Creative Home">
-                <img src="logo.png" alt="Xpertone Creative Logo" class="logo-image">
+                <img src="Logo.png" alt="Xpertone Creative Logo" class="logo-image">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="contact-button">
-            <a href="tel:+971526353298" class="btn-contact">+971 52 635 3298</a>
-        </div>
-        <!-- Mobile Menu Toggle -->
+        <!-- Mobile Menu Toggle Button -->
         <button class="mobile-menu-toggle" aria-label="Toggle Menu">
             <i class="fas fa-bars"></i>
         </button>
     </header>
 
-    <!-- About Hero Section -->
-    <section id="about-hero" class="hero-section">
+     <!-- Hero Section with Slider and Particles -->
+    <section id="home" class="hero-section">
         <div class="hero-slider">
-            <div class="hero-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('about-hero1.jpg');"></div>
-            <div class="hero-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('about-hero2.jpg');"></div>
-            <div class="hero-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('about-hero3.jpg');"></div>
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <img src="Safety-Jacket2.jpg" alt="Hero Slide 1 - Safety Gear Solutions">
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <img src="stationery4.jpg" alt="Hero Slide 2 - Printing and Stationery">
+            </div>
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <img src="Web.jpg" alt="Hero Slide 3 - Web Design and IT Services">
+            </div>
         </div>
+        <!-- Navigation Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+        <!-- Particles Canvas -->
         <canvas id="particles"></canvas>
+        <!-- Hero Content -->
         <div class="hero-content">
-            <h1>About Xpertone Creative</h1>
-            <p>A Trusted Name in Custom Apparel and Safety Gear for Over a Decade</p>
+            <h1>Xpertone Creative: Innovate, Market, Print – Your All-in-One Solution</h1>
+            <p>Premium IT Services, Digital Marketing, Printing, and Safety Gear for businesses and individuals.</p>
         </div>
     </section>
+
 
     <!-- Company History Section -->
     <section id="company-history" class="about-section">
@@ -68,36 +83,34 @@
         </div>
     </section>
 
-    <!-- Values Section -->
-    <section id="values" class="features-section">
-        <div class="container">
-            <h2>Our Core Values</h2>
-            <p>Discover the principles that drive our commitment to excellence.</p>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <i class="fas fa-star icon"></i>
-                    <h3>Quality</h3>
-                    <p>We use premium materials and advanced printing techniques to ensure every product meets the highest standards.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-shield-alt icon"></i>
-                    <h3>Safety</h3>
-                    <p>Our safety gear complies with industry standards like ANSI/ISEA 107, keeping you protected.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-users icon"></i>
-                    <h3>Customer Focus</h3>
-                    <p>Your satisfaction is our priority, with flexible orders and dedicated support.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-lightbulb icon"></i>
-                    <h3>Innovation</h3>
-                    <p>We continuously innovate to offer the latest in apparel design and safety solutions.</p>
-                </div>
+   <section id="values" class="features-section">
+    <div class="container">
+        <h2>Our Core Values</h2>
+        <p>Discover the principles that drive our commitment to excellence.</p>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-star icon"></i>
+                <h3>Quality</h3>
+                <p>We use premium materials and advanced printing techniques to ensure every product meets the highest standards.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt icon"></i>
+                <h3>Safety</h3>
+                <p>Our safety gear complies with industry standards like ANSI/ISEA 107, keeping you protected.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-users icon"></i>
+                <h3>Customer Focus</h3>
+                <p>Your satisfaction is our priority, with flexible orders and dedicated support.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-lightbulb icon"></i>
+                <h3>Innovation</h3>
+                <p>We continuously innovate to offer the latest in apparel design and safety solutions.</p>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Team Section -->
     <section id="team" class="products-section">
         <div class="container">
@@ -205,5 +218,12 @@
             mobileMenuToggle.innerHTML = isActive ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
     </script>
+     <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/+971526353298" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
