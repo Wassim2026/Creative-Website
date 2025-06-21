@@ -852,6 +852,12 @@ section,
   }
 }
 
+@media (max-width: 370px) {
+  .hide {
+    display: none !important;
+  }
+}
+
 .hero .divider {
   width: 60%;
   height: 1px;
