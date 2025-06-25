@@ -1,229 +1,456 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Xpertone Creative</title>
-    <meta name="description" content="Learn about Xpertone Creative, a trusted provider of customizable apparel and safety gear for over a decade.">
-    <meta name="keywords" content="about Xpertone Creative, custom apparel, safety gear, company history">
-    <meta name="author" content="Xpertone Creative">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Xpertone Creative | Home Page</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <script src="script.js"></script>
+  <!-- Favicons -->
+  <link href="fav.png" rel="icon">
+  <link href="fav.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Strategy
+  * Template URL: https://bootstrapmade.com/strategy-bootstrap-agency-template/
+  * Updated: Jun 06 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <a href="/" aria-label="Xpertone Creative Home">
-                <img src="Logo.png" alt="Xpertone Creative Logo" class="logo-image">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+<body class="index-page">
+
+  <div id="header"></div>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <div class="page-title dark-background aos-init aos-animate" data-aos="fade">
+      <div class="container position-relative">
+        <h1>ABOUT US</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About Us</li>
+          </ol>
         </nav>
-        <!-- Mobile Menu Toggle Button -->
-        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-    </header>
-
-     <!-- Hero Section with Slider and Particles -->
-    <section id="home" class="hero-section">
-        <div class="hero-slider">
-            <!-- Slide 1 -->
-            <div class="hero-slide active">
-                <img src="Safety-Jacket2.jpg" alt="Hero Slide 1 - Safety Gear Solutions">
-            </div>
-            <!-- Slide 2 -->
-            <div class="hero-slide">
-                <img src="stationery4.jpg" alt="Hero Slide 2 - Printing and Stationery">
-            </div>
-            <!-- Slide 3 -->
-            <div class="hero-slide">
-                <img src="Web.jpg" alt="Hero Slide 3 - Web Design and IT Services">
-            </div>
-        </div>
-        <!-- Navigation Dots -->
-        <div class="slider-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-        </div>
-        <!-- Particles Canvas -->
-        <canvas id="particles"></canvas>
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <h1>Xpertone Creative: Innovate, Market, Print – Your All-in-One Solution</h1>
-            <p>Premium IT Services, Digital Marketing, Printing, and Safety Gear for businesses and individuals.</p>
-        </div>
-    </section>
-
-
-    <!-- Company History Section -->
-    <section id="company-history" class="about-section">
-        <div class="container">
-            <h2>Our Journey</h2>
-            <p>Founded over a decade ago, Xpertone Creative began with a simple mission: to provide high-quality, customizable apparel and safety gear that meets the needs of businesses and individuals. From humble beginnings, we’ve grown into a trusted provider, serving clients across various industries with our innovative solutions. Our commitment to quality, safety, and customer satisfaction has been the cornerstone of our success.</p>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section id="mission" class="about-section">
-        <div class="container">
-            <h2>Our Mission</h2>
-            <p>At Xpertone Creative, our mission is to empower our clients with products that combine style, functionality, and safety. We strive to deliver exceptional customization options, ensuring every product reflects your unique identity while adhering to the highest safety standards.</p>
-        </div>
-    </section>
-
-   <section id="values" class="features-section">
-    <div class="container">
-        <h2>Our Core Values</h2>
-        <p>Discover the principles that drive our commitment to excellence.</p>
-        <div class="features-grid">
-            <div class="feature-item">
-                <i class="fas fa-star icon"></i>
-                <h3>Quality</h3>
-                <p>We use premium materials and advanced printing techniques to ensure every product meets the highest standards.</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-shield-alt icon"></i>
-                <h3>Safety</h3>
-                <p>Our safety gear complies with industry standards like ANSI/ISEA 107, keeping you protected.</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-users icon"></i>
-                <h3>Customer Focus</h3>
-                <p>Your satisfaction is our priority, with flexible orders and dedicated support.</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-lightbulb icon"></i>
-                <h3>Innovation</h3>
-                <p>We continuously innovate to offer the latest in apparel design and safety solutions.</p>
-            </div>
-        </div>
+      </div>
     </div>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <div><span>Learn More</span> <span class="description-title">About Us</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image position-relative">
+              <img src="assets/img/about/about-portrait-1.webp" class="img-fluid rounded-4 shadow-sm" alt="About Image" loading="lazy">
+              <div class="experience-badge">
+                <span class="years">20+</span>
+                <span class="text">Years of Expertise</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <h2>Elevating Business Performance Through Innovation</h2>
+              <p class="lead">We focus on crafting bespoke strategies that navigate complexity and deliver tangible results for our clients.</p>
+              <p>Through a blend of sophisticated analytics and creative problem-solving, we empower organizations to thrive in rapidly evolving markets.</p>
+
+              <div class="row g-4 mt-3">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h5>Dedicated Team Support</h5>
+                    <p>Our highly skilled professionals are committed to providing personalized service and impactful solutions on every engagement.</p>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="feature-item">
+                    <i class="bi bi-lightbulb-fill"></i>
+                    <h5>Forward-Thinking Approach</h5>
+                    <p>We embrace innovative methodologies to develop unique strategies that drive lasting success.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-primary mt-4">Explore Our Services</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
+              <div class="testimonial-intro">
+                <h3>Our Clients Speak Highly</h3>
+                <p>Hear directly from those who have experienced the impact of our partnership and achieved their strategic goals.</p>
+                <div class="swiper-nav-buttons mt-4">
+                  <button class="slider-prev"><i class="bi bi-arrow-left"></i></button>
+                  <button class="slider-next"><i class="bi bi-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-left" data-aos-delay="300">
+              <div class="testimonial-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 800,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 30,
+                    "navigation": {
+                      "nextEl": ".slider-next",
+                      "prevEl": ".slider-prev"
+                    },
+                    "breakpoints": {
+                      "768": {
+                        "slidesPerView": 2
+                      }
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="rating mb-3">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>"Their strategic vision and unwavering commitment to results provided exceptional value. Our operational efficiency has signficantly improved."</p>
+                      <div class="client-info d-flex align-items-center mt-4">
+                        <img src="assets/img/person/person-f-1.webp" class="client-img" alt="Client" loading="lazy">
+                        <div>
+                          <h6 class="mb-0">Eleanor Vance</h6>
+                          <span>Operations Manager</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="rating mb-3">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </div>
+                      <p>"Collaborating with their team was a revelation. Their innovative strategies guided us toward achieving our objectives with precision and speed."</p>
+                      <div class="client-info d-flex align-items-center mt-4">
+                        <img src="assets/img/person/person-m-1.webp" class="client-img" alt="Client" loading="lazy">
+                        <div>
+                          <h6 class="mb-0">David Kim</h6>
+                          <span>Product Lead</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="rating mb-3">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>"The depth of knowledge and unwavering dedication they bring to every project is exceptional. They've become an essential ally in driving our expansion."</p>
+                      <div class="client-info d-flex align-items-center mt-4">
+                        <img src="assets/img/person/person-f-2.webp" class="client-img" alt="Client" loading="lazy">
+                        <div>
+                          <h6 class="mb-0">Isabella Diaz</h6>
+                          <span>Research Analyst</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="rating mb-3">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </div>
+                      <p>"Their dedication to delivering superior solutions and their meticulous attention to detail have profoundly impacted our corporate growth trajectory."</p>
+                      <div class="client-info d-flex align-items-center mt-4">
+                        <img src="assets/img/person/person-f-3.webp" class="client-img" alt="Client" loading="lazy">
+                        <div>
+                          <h6 class="mb-0">Olivia Chen</h6>
+                          <span>Development Strategist</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+   
+   
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
+
+          <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="200">
+            <span class="badge text-uppercase mb-2">Don't Miss!</span>
+            <h2>Revolutionize Your Digital Experience Today</h2>
+            <p class="my-4">Strategia accelerates your business growth through innovative solutions and cutting-edge technology. Join thousands of satisfied customers who have transformed their operations.</p>
+
+            <div class="features d-flex flex-wrap gap-3 mb-4">
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Premium Support</span>
+              </div>
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Cloud Integration</span>
+              </div>
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Real-time Analytics</span>
+              </div>
+            </div>
+
+            <div class="cta-buttons d-flex flex-wrap gap-3">
+              <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
+            <img src="assets/img/misc/misc-1.webp" alt="Digital Platform" class="img-fluid rounded-4">
+            <div class="floating-card">
+              <div class="card-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div class="card-content">
+                <span class="stats-number">245%</span>
+                <span class="stats-text">Growth Rate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="decoration">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+   
+    
     <!-- Team Section -->
-    <section id="team" class="products-section">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <p>Our dedicated professionals are here to bring your vision to life.</p>
-            <div class="products-grid">
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="team-member1.jpg" alt="Team Member 1">
-                    </div>
-                    <div class="product-content">
-                        <h3>John Doe</h3>
-                        <p class="description">Founder & CEO</p>
-                    </div>
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <div><span>Check Our</span> <span class="description-title">Team</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex">
+              <div class="member-img">
+                <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="member-info flex-grow-1">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
                 </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="team-member2.jpg" alt="Team Member 2">
-                    </div>
-                    <div class="product-content">
-                        <h3>Jane Smith</h3>
-                        <p class="description">Creative Director</p>
-                    </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex">
+              <div class="member-img">
+                <img src="assets/img/person/person-f-8.webp" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="member-info flex-grow-1">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
                 </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="team-member3.jpg" alt="Team Member 3">
-                    </div>
-                    <div class="product-content">
-                        <h3>Mike Johnson</h3>
-                        <p class="description">Operations Manager</p>
-                    </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex">
+              <div class="member-img">
+                <img src="assets/img/person/person-m-6.webp" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="member-info flex-grow-1">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
+          </div><!-- End Team Member -->
 
-    <!-- Contact Buttons Section -->
-    <section id="contact-buttons" class="contact-buttons-section">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Reach out to Xpertone Creative through your preferred method.</p>
-            <div class="contact-buttons-grid">
-                <a href="https://wa.me/+971582242212" class="contact-button whatsapp" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-whatsapp"></i> WhatsApp<br>+971 58 224 2212
-                </a>
-                <a href="tel:+971582242212" class="contact-button call">
-                    <i class="fas fa-phone"></i> Call<br>+971 58 224 2212
-                </a>
-                <a href="https://calendar.google.com/calendar/appointments" class="contact-button meet" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-calendar-alt"></i> Meet<br>Book A Meeting
-                </a>
-                <a href="mailto:info@xpertonecreative.com" class="contact-button email">
-                    <i class="fas fa-envelope"></i> Email<br>info@xpertonecreative.com
-                </a>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex">
+              <div class="member-img">
+                <img src="assets/img/person/person-f-4.webp" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="member-info flex-grow-1">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
+          </div><!-- End Team Member -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <img src="logo.png" alt="Xpertone Creative Logo" class="footer-logo">
-                <p>Your trusted partner for IT, digital marketing, printing, and safety solutions.</p>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="team-member d-flex">
+              <div class="member-img">
+                <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="member-info flex-grow-1">
+                <h4>Brian Doe</h4>
+                <span>Marketing</span>
+                <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
             </div>
-            <div class="footer-section">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="services.html#website-design">Website Design & Development</a></li>
-                    <li><a href="services.html#crm">Customer Relationship Management (CRM)</a></li>
-                    <li><a href="services.html#video-production">Video Production</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <p><a href="tel:+971582242212">+971 58 224 2212</a></p>
-                <p><a href="mailto:info@xpertonecreative.com">info@xpertonecreative.com</a></p>
-                <p>226, Iridium Building, Umm Suqeim Road, Dubai</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 Xpertone Creative. All rights reserved.</p>
-        </div>
-    </footer>
+          </div><!-- End Team Member -->
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-        const nav = document.querySelector('nav');
-        mobileMenuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            const isActive = nav.classList.contains('active');
-            mobileMenuToggle.innerHTML = isActive ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
-    </script>
-     <!-- Floating WhatsApp Icon -->
-    <a href="https://wa.me/+971526353298" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="team-member d-flex">
+              <div class="member-img">
+                <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="member-info flex-grow-1">
+                <h4>Josepha Palas</h4>
+                <span>Operation</span>
+                <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+  
+   
+   
+  </main>
+
+<div id="footer"></div>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+<a href="https://wa.me/971526353298" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+</a>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
