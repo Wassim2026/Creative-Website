@@ -2179,6 +2179,9 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   border-radius: 8px;
   transition: 0.3s;
+  height: 250px; /* adjust as needed */
+  display: flex;
+  overflow: hidden;
 }
 
 .team .team-member:hover {
@@ -2191,8 +2194,8 @@ section,
 }
 
 .team .team-member .member-img img {
-  width: 200px;
   height: 100%;
+  width: 200px;
   object-fit: cover;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -3786,7 +3789,7 @@ section,
 
 .whatsapp-float {
   position: fixed;
-  bottom: 60px;
+  bottom: 70px;
   right: 10px;
   z-index: 999;
   background-color: #25D366;
