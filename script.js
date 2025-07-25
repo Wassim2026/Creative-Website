@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (quantity) {
             const message = `Hello, I would like to order ${quantity} pcs of ${product.name}.`;
             const encodedMessage = encodeURIComponent(message);
-            const whatsappLink = `https://wa.me/971526353298?text=${encodedMessage}`;
+            const whatsappLink = `https://wa.me/971545832318?text=${encodedMessage}`;
             const whatsappOrder = document.getElementById('whatsapp-order');
             if (whatsappOrder) {
                 whatsappOrder.setAttribute('href', whatsappLink);
